@@ -12978,7 +12978,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELA"/>
-         <value>159</value>
+         <value>191</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="ANSELB"/>
@@ -13630,7 +13630,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSELA5"/>
-         <value>digital</value>
+         <value>analog</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="ANSELA" settingAlias="ANSELA6"/>
@@ -16254,11 +16254,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="pubSubSPIMASTERConfigurations"/>
-         <value>3465.1038931017297</value>
+         <value>6785.808017565605</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="pubSubspiSubscriber"/>
-         <value>1151.947514673002</value>
+         <value>6178.364937894457</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="spiSubscriber"/>
@@ -16270,7 +16270,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="SPIMASTER" name="validate"/>
-         <value>0.4101579051820542</value>
+         <value>0.11711193791255592</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.PropertyTokenKey" moduleName="SPIMASTER" name="spiConfigurations%0%dataInputSample"/>
@@ -17810,7 +17810,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="WINC15XX" name="pubSubWINC15XX_SPIMASTER/interfaceV2"/>
-         <value>1942.7565712983653</value>
+         <value>6521.161889348509</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="WINC15XX" name="ssid"/>
@@ -18029,10 +18029,54 @@
          <value>Window delay time 87.5%</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap">
+   <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>main.c</file>
-         <hash>c82b45382599c9edc4829bc6c5c337ad37bf2bfcb65d6ceddbee30b738e0ac4c</hash>
+         <file>mcc_generated_files\winc\driver\winc_drv.h</file>
+         <hash>66b62029438b6217eea75eb0012eac8cf952da48c69a66afbbe60d007e092d58</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_ssl.c</file>
+         <hash>50ec8a91074744056c71efcfffb3a25f44495b2ccd927f2bbdc1069385a251f2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\examples\winc_example.c</file>
+         <hash>321254ddfb412cd075d85f14d8a2f562c7b24bb7454e9bf290c94a65690643bb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_ssl.h</file>
+         <hash>6450c81717635dca5ffb3bf941548ee7db123a07151ffd94f85555b9add3ba5e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi1.h</file>
+         <hash>df038179155038270ed0caa1dd6a1b1931e8e57b1ec258dcfbdfd7ec0db6d885</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\drivers\spi_master.c</file>
+         <hash>00592acf9b1cb3a94a5c570a1f492c3ead66090e69f45c738f0d35a358b201ef</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\examples\winc_example.h</file>
+         <hash>8e7438845980e3374bd952c1a157c884cc3e750c3b5d488076f5a8371fc21f3d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\drivers\spi_master.h</file>
+         <hash>fb057fc2045fc45b7f003893573eab15e39a82782f3f357ebbb11c02505cb90c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\common\winc_debug.h</file>
+         <hash>f03094265eda1838b4b8fc721727f07ed688f0aa60a008b5bd82dcc68f7afb23</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_crypto.c</file>
+         <hash>d3890b1f813da0f39ea96a6b4b63c54fe349863f4f6be4cc4fbe5a3aedf52c23</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\spi1.c</file>
+         <hash>948d88b53d2badba11c0b8139a631dd4731101a7b570c88f12c89df1ca081284</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\socket\socket.c</file>
+         <hash>b87a16fc56a593e07a1fa5917f150f5115577600cd5ae1c01d91748782d9515c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\config\conf_winc.h</file>
@@ -18043,240 +18087,196 @@
          <hash>742b54d5a6a92f5aa610a8147b6d8725268a74567d19370a4dd95fa5efa0127e</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\winc\spi_flash\flexible_flash.h</file>
+         <hash>a301c111be496566ec624a1730d3d1c0b7bf3bbdff3d68af0424109493a22d5b</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\delay.h</file>
          <hash>dda77102dba9adc0f9aef1c8c542cfee6d6cccc96446f4cd1bf07be2150a4d95</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>9e898251df45388aeae0852a9251057dad46e89e1f542e90663bdab882f89652</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>aa1eaae1d8c99eb9381a99a203493b4e7fd3220820b569a5c516021878616d93</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\docs\delay.dox</file>
-         <hash>13d4874d789b563dd4499efacd71882cbc38f8459da91ac17f13fa76079be93b</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\docs\spi.dox</file>
-         <hash>518908892e2d8bc846cfc4b846e70d96c4f59fab7dbddc55fadee679aeaa9697</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\docs\spi_basic.dox</file>
-         <hash>a44690903480f96ed2a8a1605d29c339aca8ac9770e946ae77260a559aa40a6a</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\drivers\spi_master.c</file>
-         <hash>00592acf9b1cb3a94a5c570a1f492c3ead66090e69f45c738f0d35a358b201ef</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\drivers\spi_master.h</file>
-         <hash>fb057fc2045fc45b7f003893573eab15e39a82782f3f357ebbb11c02505cb90c</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\examples\winc_example.c</file>
-         <hash>33481b72c4de9bb8b56cf18247c78434c150219a5ff76a5131f28b4d2d98dc41</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\examples\winc_example.h</file>
-         <hash>8e7438845980e3374bd952c1a157c884cc3e750c3b5d488076f5a8371fc21f3d</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>f1d95b79d3eecf2126293525ff1d1592996b5ce1491a25f3aab10890a5ab58d8</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>84c0304e8dcbc82d623e4cf002e9b888001ef11c5154eca69c1699b9f0158b6d</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.c</file>
-         <hash>826da09b65307b022baaa7aa02b051e7f4be524a1d50385925d140e83cde8728</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>bad6a266816ffaaec55960ba3fac2f07e706e6ffd0f012541b4ff66832cef7c0</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>a101aca0bcfcecd3019d617b9be2caa2bf430f1bd679af140c10b0ee68ccf463</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>e808c8a011975e81364568c54bd2b928c99e9814ef4a77aa5f5fba44dda46b8d</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\spi1.c</file>
-         <hash>948d88b53d2badba11c0b8139a631dd4731101a7b570c88f12c89df1ca081284</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\spi1.h</file>
-         <hash>df038179155038270ed0caa1dd6a1b1931e8e57b1ec258dcfbdfd7ec0db6d885</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\uart1.c</file>
-         <hash>b20883c073a6c94b0c6dd181195860f0bd43ede36000e2a5c1ce5dd600f010f8</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\uart1.h</file>
-         <hash>9a22e9d8a7d70fb528b32c79d692a758089ad9b6c86ac0cd1c7a64dc3a28e6fb</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\common\ecc_types.h</file>
-         <hash>2cfd895d1cd5c63e48a34b855becda55947689f9e9751c543431a26baabe08bd</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\common\winc_1500_3A0_registers.h</file>
-         <hash>f56b5c8f27c73c045fcacb59e0b33b5491c6254836fe565d24fefaaf641ad61e</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\common\winc_debug.h</file>
-         <hash>f03094265eda1838b4b8fc721727f07ed688f0aa60a008b5bd82dcc68f7afb23</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\common\winc_defines.h</file>
-         <hash>89d82b8cc3db4bb58d8346db1c6b6ce7bfd8dfed078993e7613043188fce00c0</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\common\winc_registers.h</file>
-         <hash>2209cd7c94452ed454197a9ca5716e708bab810f67065d9e1b1836b6936f2dc2</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_adapter.c</file>
-         <hash>f6fc958a5370d0e294e65366bc189f932877605a7f69f1ea505183b383574722</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_adapter.h</file>
-         <hash>3fe7dae100cb413a79cc4f968aacfa54da39c3f8c1f20788c2b1ae080ca1fac7</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_asic.c</file>
-         <hash>1614a5b224b3719d1a592c4cce277bbb76877348e0dd0d6e6de4080abcf5b08d</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_asic.h</file>
-         <hash>ac569447dd015f000ea495f5c5202165f141b5ec3a6c7419930bf2904cc94f73</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_drv.c</file>
-         <hash>7911d708c715336c98ccc43e62b973743d8d5f68b9cb05113acdddf3d0f52f85</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_drv.h</file>
-         <hash>66b62029438b6217eea75eb0012eac8cf952da48c69a66afbbe60d007e092d58</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_hif.c</file>
-         <hash>6f82f3529faa7f0ad94a819ada5931c229003ed184aab832306e219d3a074e54</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_hif.h</file>
-         <hash>2116ae95b7be26fba14c1c1ca302b2959d2bbdab96cffc4ffa8280264836c0c9</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_spi.c</file>
-         <hash>71cd14676f4f54fd13c6a51f9512eda2e0cafca12e357a11e4aa6f85b6e0cce6</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\driver\winc_spi.h</file>
-         <hash>15b7f2632e2f40b4dccff1da1cec2908a69543eff9c87089f114ee3b904ed174</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\include\conf_winc_defaults.h</file>
-         <hash>09fcc4bba972c8e71cd27c80638575d65b2a1de255fbda0196e3122dab75ed97</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\include\winc.h</file>
-         <hash>0be9ee5bfc1a79a671c9aefe81e1dd2f463046394dc452bf2e33f6457cb51441</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\include\winc_legacy.h</file>
-         <hash>8e0e493e16cd3d11afce847a8a2e516c1c8b86af09a525dec7837f941274f49b</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_crypto.c</file>
-         <hash>d3890b1f813da0f39ea96a6b4b63c54fe349863f4f6be4cc4fbe5a3aedf52c23</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_crypto.h</file>
          <hash>e0164e1f06a3e486714751bede7f7f87ea747ee881aa36b436a87077cb648ccb</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_fwinfo.c</file>
-         <hash>6e0a2161f807cba90cc3db532d102dc03640db770a9b9bff5c9c423c3db14e2e</hash>
+         <file>mcc_generated_files\winc\socket\socket.h</file>
+         <hash>4c83afb9f5c075e66b513ad89379261d0e83c5bd8501604d01a9d16a137cb202</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_fwinfo.h</file>
-         <hash>0c644a597f6728501f7c3469d078f3a73153b82b2c66fe3c665b1a552dfc3b4f</hash>
+         <file>mcc_generated_files\docs\delay.dox</file>
+         <hash>13d4874d789b563dd4499efacd71882cbc38f8459da91ac17f13fa76079be93b</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_ota.c</file>
-         <hash>6585f6383be85da2433ac2b7675176d07ba8cd1f5ee2c73d02aa9f921c8ee56c</hash>
+         <file>mcc_generated_files\winc\driver\winc_drv.c</file>
+         <hash>7911d708c715336c98ccc43e62b973743d8d5f68b9cb05113acdddf3d0f52f85</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_ota.h</file>
-         <hash>e5d9c84757ad23e1e405c35ac71973c8608867184dbaf124abe08982ec53ff99</hash>
+         <file>mcc_generated_files\winc\include\conf_winc_defaults.h</file>
+         <hash>09fcc4bba972c8e71cd27c80638575d65b2a1de255fbda0196e3122dab75ed97</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_periph.c</file>
          <hash>a848c66ebb46d75583469b112d22bd224a3d05d186ecb91595e3e4ceb27c8683</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>826da09b65307b022baaa7aa02b051e7f4be524a1d50385925d140e83cde8728</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\winc\m2m\m2m_periph.h</file>
          <hash>f98c6a61e5940ffb63539b3f4979afd3e906a06a0eba151211bff7deacf2bf90</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>aa1eaae1d8c99eb9381a99a203493b4e7fd3220820b569a5c516021878616d93</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart1.h</file>
+         <hash>9a22e9d8a7d70fb528b32c79d692a758089ad9b6c86ac0cd1c7a64dc3a28e6fb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\uart1.c</file>
+         <hash>b20883c073a6c94b0c6dd181195860f0bd43ede36000e2a5c1ce5dd600f010f8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_asic.c</file>
+         <hash>1614a5b224b3719d1a592c4cce277bbb76877348e0dd0d6e6de4080abcf5b08d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>9e898251df45388aeae0852a9251057dad46e89e1f542e90663bdab882f89652</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>e808c8a011975e81364568c54bd2b928c99e9814ef4a77aa5f5fba44dda46b8d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\common\winc_registers.h</file>
+         <hash>2209cd7c94452ed454197a9ca5716e708bab810f67065d9e1b1836b6936f2dc2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_hif.h</file>
+         <hash>2116ae95b7be26fba14c1c1ca302b2959d2bbdab96cffc4ffa8280264836c0c9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_adapter.h</file>
+         <hash>3fe7dae100cb413a79cc4f968aacfa54da39c3f8c1f20788c2b1ae080ca1fac7</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_hif.c</file>
+         <hash>6f82f3529faa7f0ad94a819ada5931c229003ed184aab832306e219d3a074e54</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_spi.c</file>
+         <hash>71cd14676f4f54fd13c6a51f9512eda2e0cafca12e357a11e4aa6f85b6e0cce6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_adapter.c</file>
+         <hash>f6fc958a5370d0e294e65366bc189f932877605a7f69f1ea505183b383574722</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\driver\winc_asic.h</file>
+         <hash>ac569447dd015f000ea495f5c5202165f141b5ec3a6c7419930bf2904cc94f73</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>a101aca0bcfcecd3019d617b9be2caa2bf430f1bd679af140c10b0ee68ccf463</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_socket_host_if.h</file>
          <hash>4e1d2c49b610ac39e2d1b70145763f31ecb6f45319e05abd810c2064298293bf</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_ssl.c</file>
-         <hash>50ec8a91074744056c71efcfffb3a25f44495b2ccd927f2bbdc1069385a251f2</hash>
+         <file>mcc_generated_files\winc\driver\winc_spi.h</file>
+         <hash>15b7f2632e2f40b4dccff1da1cec2908a69543eff9c87089f114ee3b904ed174</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_ssl.h</file>
-         <hash>6450c81717635dca5ffb3bf941548ee7db123a07151ffd94f85555b9add3ba5e</hash>
+         <file>mcc_generated_files\winc\common\winc_1500_3A0_registers.h</file>
+         <hash>f56b5c8f27c73c045fcacb59e0b33b5491c6254836fe565d24fefaaf641ad61e</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>f1d95b79d3eecf2126293525ff1d1592996b5ce1491a25f3aab10890a5ab58d8</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\m2m\m2m_types.h</file>
          <hash>59799bf763cddcf1d88e8df480a50a111bd09b7dc4d3b012d8c97c054b3583f5</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_wifi.c</file>
-         <hash>99ba0b52461372454b01f88c2cde3a2fc81ee7a029d52e2f0ad57a703356291c</hash>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>84c0304e8dcbc82d623e4cf002e9b888001ef11c5154eca69c1699b9f0158b6d</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\m2m\m2m_wifi.h</file>
-         <hash>b179b576c5fa127e144921bc50d6e5c705f62f8067229dd9af9c96e1e3f511b2</hash>
+         <file>mcc_generated_files\winc\m2m\m2m_ota.c</file>
+         <hash>6585f6383be85da2433ac2b7675176d07ba8cd1f5ee2c73d02aa9f921c8ee56c</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\socket\socket.c</file>
-         <hash>b87a16fc56a593e07a1fa5917f150f5115577600cd5ae1c01d91748782d9515c</hash>
+         <file>mcc_generated_files\winc\include\winc_legacy.h</file>
+         <hash>8e0e493e16cd3d11afce847a8a2e516c1c8b86af09a525dec7837f941274f49b</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\winc\socket\socket.h</file>
-         <hash>4c83afb9f5c075e66b513ad89379261d0e83c5bd8501604d01a9d16a137cb202</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\spi_flash\flexible_flash.c</file>
-         <hash>f1da3f9a4f50ddb7f3b1231d0c407ed2cc3f8060f4f4b09cebadd1c6d63eef63</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\winc\spi_flash\flexible_flash.h</file>
-         <hash>a301c111be496566ec624a1730d3d1c0b7bf3bbdff3d68af0424109493a22d5b</hash>
+         <file>mcc_generated_files\winc\m2m\m2m_ota.h</file>
+         <hash>e5d9c84757ad23e1e405c35ac71973c8608867184dbaf124abe08982ec53ff99</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\winc\spi_flash\spi_flash.c</file>
          <hash>aadd3775470342ab9622704a09d84ca4c531713727be3e564f0d55203ef23575</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\docs\spi.dox</file>
+         <hash>518908892e2d8bc846cfc4b846e70d96c4f59fab7dbddc55fadee679aeaa9697</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\winc\spi_flash\spi_flash.h</file>
          <hash>72c501daa30b434d864c759e3236f492422375890e1adbb2a826e2767092e73e</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\docs\spi_basic.dox</file>
+         <hash>a44690903480f96ed2a8a1605d29c339aca8ac9770e946ae77260a559aa40a6a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>bad6a266816ffaaec55960ba3fac2f07e706e6ffd0f012541b4ff66832cef7c0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_fwinfo.h</file>
+         <hash>0c644a597f6728501f7c3469d078f3a73153b82b2c66fe3c665b1a552dfc3b4f</hash>
+      </entry>
+      <entry>
+         <file>main.c</file>
+         <hash>c82b45382599c9edc4829bc6c5c337ad37bf2bfcb65d6ceddbee30b738e0ac4c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\common\ecc_types.h</file>
+         <hash>2cfd895d1cd5c63e48a34b855becda55947689f9e9751c543431a26baabe08bd</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\spi_flash\flexible_flash.c</file>
+         <hash>f1da3f9a4f50ddb7f3b1231d0c407ed2cc3f8060f4f4b09cebadd1c6d63eef63</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\winc\spi_flash\spi_flash_map.h</file>
          <hash>14fae3fae7e71a789f86095d606712e37408fd60b146588bca2c9182df0ccbb6</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_wifi.c</file>
+         <hash>99ba0b52461372454b01f88c2cde3a2fc81ee7a029d52e2f0ad57a703356291c</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\common\winc_defines.h</file>
+         <hash>89d82b8cc3db4bb58d8346db1c6b6ce7bfd8dfed078993e7613043188fce00c0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_wifi.h</file>
+         <hash>b179b576c5fa127e144921bc50d6e5c705f62f8067229dd9af9c96e1e3f511b2</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\include\winc.h</file>
+         <hash>0be9ee5bfc1a79a671c9aefe81e1dd2f463046394dc452bf2e33f6457cb51441</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\winc\m2m\m2m_fwinfo.c</file>
+         <hash>6e0a2161f807cba90cc3db532d102dc03640db770a9b9bff5c9c423c3db14e2e</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

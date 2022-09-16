@@ -37,7 +37,6 @@
 
 #include "../mcc.h"
 #include "../winc/include/winc.h"
-#include "../winc/include/winc_legacy.h"
 
 void winc_register_init(void);
 
@@ -45,9 +44,11 @@ void wifi_event_cb(uint8_t u8WiFiEvent, const void *const pvMsg)
 {
     switch(u8WiFiEvent)
     {
-    case M2M_WIFI_RESP_CON_STATE_CHANGED:
+    case M2M_WIFI_REQ_DHCP_CONF:
         {
-            // add custom code here
+            uint8_t *pu8IPAddress = (uint8_t*)pvMsg;
+
+            printf("Associated STA has IP Address \"%u.%u.%u.%u\"\n",pu8IPAddress[0],pu8IPAddress[1],pu8IPAddress[2],pu8IPAddress[3]);
         }
         break;
 
@@ -61,20 +62,45 @@ void winc_example(void)
     winc_register_init();
     winc_adapter_init();
     tstrWifiInitParam   param;
-    
-    m2m_memset((uint8_t *)&param, 0, sizeof(param));
-    param.pfAppWifiCb   = wifi_event_cb;
 
-    int8_t ret = m2m_wifi_init(&param);
-    if (M2M_SUCCESS != ret){
-        while(1);
-    }
-    
-    ret = m2m_wifi_connect((char *)CFG_MAIN_WLAN_SSID, sizeof(CFG_MAIN_WLAN_SSID), CFG_MAIN_WLAN_AUTH, (void *)CFG_MAIN_WLAN_PSK, M2M_WIFI_CH_ALL);
-    
-    while(1)
+    param.pfAppWifiCb   = wifi_event_cb;
+    if(M2M_SUCCESS == m2m_wifi_init(&param))
     {
-        m2m_wifi_handle_events(NULL);
+        tstrM2MAPModeConfig     apModeConfig;
+
+        strcpy((char*)apModeConfig.strApConfig.au8SSID, CFG_MAIN_WLAN_SSID);
+        apModeConfig.strApConfig.u8ListenChannel    = 1;
+        apModeConfig.strApConfig.u8SsidHide         = 0;  
+        apModeConfig.strApConfig.u8SecType          = CFG_MAIN_WLAN_AUTH;
+        strcpy((char*)apModeConfig.strApConfig.au8Key, CFG_MAIN_WLAN_PSK);
+        apModeConfig.strApConfig.u8KeySz = strlen(CFG_MAIN_WLAN_PSK);
+            
+        
+        // IP Address
+        apModeConfig.strApConfig.au8DHCPServerIP[0] = 192;
+        apModeConfig.strApConfig.au8DHCPServerIP[1] = 168;
+        apModeConfig.strApConfig.au8DHCPServerIP[2] = 1;
+        apModeConfig.strApConfig.au8DHCPServerIP[3] = 1;
+
+        // Default router IP
+        memcpy(apModeConfig.strApConfigExt.au8DefRouterIP, apModeConfig.strApConfig.au8DHCPServerIP, 4);
+
+        // DNS Server IP
+        memcpy(apModeConfig.strApConfigExt.au8DNSServerIP, apModeConfig.strApConfig.au8DHCPServerIP, 4);
+
+        // Subnet mask
+        apModeConfig.strApConfigExt.au8SubnetMask[0]    = 255;
+        apModeConfig.strApConfigExt.au8SubnetMask[1]    = 255;
+        apModeConfig.strApConfigExt.au8SubnetMask[2]    = 255;
+        apModeConfig.strApConfigExt.au8SubnetMask[3]    = 0;
+
+        // Trigger AP
+        m2m_wifi_enable_ap_ext(&apModeConfig);
+
+        while(1)
+        {
+            m2m_wifi_handle_events(NULL);
+        }
     }
 }
 
