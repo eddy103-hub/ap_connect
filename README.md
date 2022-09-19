@@ -35,5 +35,5 @@ After the application is flashed to the PIC18F57Q43 Curiosity Nano, the ATWINC15
 
 
 ![image](https://user-images.githubusercontent.com/66494140/190977755-6ce32deb-e980-4fcf-a1d5-05585e4459fd.png)
-#Summery
+
 
