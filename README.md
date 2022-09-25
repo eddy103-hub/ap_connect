@@ -22,7 +22,7 @@
 ### Pin Connection Table
 
 | Description | Direction| Microcontroller Pin|
-| ------------- | ------------- |-------------
+| ------------- | ------------- |-------------         
 | RESET_N  | OUT | RC7
 | WAKE  |OUT | RD5
 | IRQN  |IN | RA6
@@ -32,9 +32,9 @@
 | SPI_MISO |IN | RC5
 | SPI_CLK |OUT | RC6
 
+![image](https://user-images.githubusercontent.com/66494140/192144539-9f3a13f8-6464-4b12-bd3f-bf81721efa79.png)
 
 
-![image](https://user-images.githubusercontent.com/66494140/190973658-34e1c03e-8b0b-43c3-8cc5-1a3071084b04.png)
 
 ## MCC Settings:
 #### WINC15XX 
