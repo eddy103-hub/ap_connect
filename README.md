@@ -19,6 +19,21 @@
 * [Curiosity Nano Base for Click boards](https://www.microchip.com/en-us/development-tool/AC164162)
 # Setup
 ## Harware Setup
+### Pin Connection Table
+
+| Description | Direction| Microcontroller Pin|
+| ------------- | ------------- |-------------
+| RESET_N  | OUT | RC7
+| WAKE  |OUT | RD5
+| IRQN  |IN | RA6
+| CHIP_EN  |OUT | RD7
+| SPI_SSN  |OUT | RD6
+| SPI_MOSI |OUT | RC4
+| SPI_MISO |IN | RC5
+| SPI_CLK |OUT | RC6
+
+
+
 ![image](https://user-images.githubusercontent.com/66494140/190973658-34e1c03e-8b0b-43c3-8cc5-1a3071084b04.png)
 
 ## MCC Settings:
